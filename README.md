@@ -14,4 +14,19 @@ Este servicio Spring Boot proporciona un endpoint REST para consultar precios en
 - IDE (opcional)
 
 ## 2. Configuración del proyecto
-1. Clonar el repositorio
+1. Clonar el repositorio - >
+
+   ```java
+   git clone https://github.com/chrisanre/inditex.git cd e-commerce-pricing-service
+   ```
+2. Configurar los datos de H2
+- La base de datos H2 está configurada para automáticamente para inicializarse al arrancar la aplicación. Se puede ajustar la configuración en 'src/main/resources/application.properties'. En esta ruta tambien se encuentra el script de inicialización de la BD con los datos de ejemplo (data.sql)
+
+3. Compile y building
+   ```java
+   mvn clean package
+   ```
+4. Ejecutar
+   ```java
+   java -jar target/e-commerce-pricing-service.jar
+   ```
